@@ -10,7 +10,7 @@
 /* HEADER */
 
 .container {
-  max-width: 1200px;
+  max-width: 1640px;
   width: 100%;
   margin: 0 auto;
 }
@@ -67,13 +67,16 @@
   background-color: #29b24e;
 }
 
-/* LEFT SECTION */
+/* MAIN SECTION */
 
 .main-section {
   display: flex;
   justify-content: space-between;
   gap: 20px;
+  margin-bottom: 32px;
 }
+
+/* LEFT SECTION */
 
 .left-section {
   background-color: #f8f8f8;
@@ -83,7 +86,7 @@
   padding: 20px;
 }
 
-.section-h2 {
+.left-section-h2 {
   font-size: 16px;
   margin-bottom: 16px;
   background-color: #f8f8f8;
@@ -110,21 +113,21 @@
   background-color: #f8f8f8;
 }
 
-label {
+.label {
   background-color: #f8f8f8;
 }
 
-span {
+.input-span {
   font-size: 14px;
   background-color: #f8f8f8;
 }
 
-input[type="checkbox"] {
-  accent-color: #25a146;
-}
-
 .input-grey {
   color: rgb(0, 0, 0, 50%);
+}
+
+#checkbox[type="checkbox"] {
+  accent-color: #25a146;
 }
 
 /* RIGHT SECTION */
@@ -161,4 +164,79 @@ input[type="checkbox"] {
   border: 1px solid #ccc;
   border-radius: 4px;
   width: 324px;
+}
+
+/* BOTTOM SECTION */
+
+.bottom-section {
+  margin-bottom: 120px;
+}
+
+.bottom-section-h2 {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+.bottom-section-flex {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.article-h3 {
+  background-color: #f8f8f8;
+}
+
+.article {
+  max-width: 395px;
+  width: 100%;
+  background-color: #f8f8f8;
+  padding: 16px;
+  border-radius: 28px;
+}
+
+.article-image {
+  margin-bottom: 16px;
+  background-color: #f8f8f8;
+}
+
+.article-location {
+  color: rgb(0, 0, 0, 50%);
+  margin-bottom: 8px;
+  background-color: #f8f8f8;
+}
+
+.article-price {
+  text-align: end;
+  color: #29b24e;
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 15px;
+  background-color: #f8f8f8;
+}
+
+.article-price::after {
+  width: 100%;
+  display: block;
+  content: "";
+  border-bottom: 3px solid #cfead6;
+  margin-top: 16px;
+  margin-bottom: 24px;
+}
+
+.article-price-span {
+  color: black;
+  font-size: 12px;
+  font-weight: normal;
+  background-color: #f8f8f8;
+}
+
+.article-flex {
+  display: flex;
+  justify-content: space-between;
+  background-color: #f8f8f8;
+}
+.article-flex-span {
+  background-color: #f8f8f8;
 }
