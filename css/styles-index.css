@@ -26,7 +26,7 @@
 .nav-ul {
   display: flex;
   justify-content: space-between;
-  gap: 20px;
+  gap: 40px;
 }
 
 .nav-li {
@@ -67,6 +67,10 @@
   background-color: #29b24e;
 }
 
+.button:hover {
+  background-color: #54c171;
+}
+
 /* MAIN SECTION */
 
 .main-section {
@@ -80,7 +84,7 @@
 
 .left-section {
   background-color: #f8f8f8;
-  width: 395px;
+  max-width: 395px;
   height: 751px;
   border-radius: 24px;
   padding: 20px;
@@ -127,7 +131,7 @@
 }
 
 #checkbox[type="checkbox"] {
-  accent-color: #25a146;
+  accent-color: #218e3e;
 }
 
 /* RIGHT SECTION */
@@ -188,21 +192,44 @@
   background-color: #f8f8f8;
 }
 
+.article-link {
+  text-decoration: none;
+  color: black;
+  background-color: #f8f8f8;
+}
+
+.article-link:hover {
+  color: #29b24e;
+}
+
 .article {
   max-width: 395px;
   width: 100%;
   background-color: #f8f8f8;
   padding: 16px;
   border-radius: 28px;
+  position: relative;
+}
+
+.article::before {
+  content: "VIP TOP+";
+  background-color: #29b24e;
+  color: white;
+  font-size: 18px;
+  padding: 6px 11px;
+  border-radius: 15px;
+  position: absolute;
+  left: 30px;
+  top: 30px;
 }
 
 .article-image {
-  margin-bottom: 16px;
+  padding-bottom: 16px;
   background-color: #f8f8f8;
 }
 
 .article-location {
-  color: rgb(0, 0, 0, 50%);
+  opacity: 50%;
   margin-bottom: 8px;
   background-color: #f8f8f8;
 }
@@ -239,4 +266,49 @@
 }
 .article-flex-span {
   background-color: #f8f8f8;
+}
+
+/* FOOTER */
+
+.footer {
+  height: 179px;
+  background-color: #29b24e;
+}
+
+.footer-flex {
+  display: flex;
+  justify-content: space-between;
+  background-color: #29b24e;
+  padding: 32px 140px;
+}
+
+.footer-left,
+.footer-right {
+  display: flex;
+  justify-content: space-between;
+  gap: 48px;
+  background-color: #29b24e;
+}
+
+.footer-center {
+  background-color: #29b24e;
+}
+
+.footer-link {
+  color: white;
+  background-color: #29b24e;
+  text-decoration: none;
+}
+
+.bottom {
+  text-align: center;
+  padding-bottom: 40px;
+}
+
+.bottom::before {
+  content: "";
+  width: 100%;
+  display: block;
+  border-top: 1px solid #d0d0d0;
+  height: 32px;
 }
