@@ -177,6 +177,10 @@
   border-top: 1px solid #ececec;
 }
 
+.flex-for-mobile {
+  background-color: white;
+}
+
 .right-section-h6 {
   background-color: white;
   font-size: 12px;
@@ -384,7 +388,7 @@
 
 /* MEDIA QUERIES */
 
-@media (max-width: 900px) {
+@media (max-width: 768px) {
   .container {
     max-width: 375px;
     padding: 20px;
