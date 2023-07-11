@@ -138,7 +138,7 @@
 
 .right-section {
   background-image: url("../images/Rectangle-main.png");
-  background-size: contain;
+  background-size: cover;
   background-repeat: no-repeat;
   max-width: 1225px;
   width: 100%;
@@ -351,6 +351,22 @@
 
 /* MEDIA QUERIES */
 
+@media (max-width: 1400px) {
+  .footer {
+    height: 220px;
+  }
+
+  .bottom {
+    padding-bottom: 20px;
+  }
+}
+
+@media (max-width: 900px) {
+  .footer {
+    height: 250px;
+  }
+}
+
 @media (max-width: 768px) {
   .container {
     max-width: 375px;
@@ -482,5 +498,9 @@
 
   .footer-nav-button:hover {
     color: #29b24e;
+  }
+
+  .bottom {
+    padding-bottom: 0px;
   }
 }

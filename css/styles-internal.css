@@ -388,6 +388,27 @@
 
 /* MEDIA QUERIES */
 
+@media (max-width: 1400px) {
+  .section-flex {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer {
+    height: 220px;
+  }
+
+  .bottom {
+    padding-bottom: 20px;
+  }
+}
+
+@media (max-width: 900px) {
+  .footer {
+    height: 250px;
+  }
+}
+
 @media (max-width: 768px) {
   .container {
     max-width: 375px;
@@ -550,5 +571,9 @@
 
   .footer-nav-button:hover {
     color: #29b24e;
+  }
+
+  .bottom {
+    padding-bottom: 0px;
   }
 }
