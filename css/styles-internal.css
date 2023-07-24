@@ -188,10 +188,15 @@
   font-weight: 400;
 }
 
-.right-section-p {
+.right-section-p,
+.right-section-li {
   background-color: white;
   font-size: 14px;
   font-weight: 500;
+  list-style: none;
+}
+
+.right-section-p {
   margin-bottom: 16px;
 }
 
@@ -444,6 +449,11 @@
 
   .right-section-text {
     font-size: 12px;
+  }
+
+  .right-section-ul {
+    list-style: none;
+    background-color: white;
   }
 
   .mid {
